@@ -1,0 +1,146 @@
+@CHARSET "UTF-8";
+
+#mycontainer	{ border: 0px solid red;
+				  background-color: #F0F0F0;  
+				  position: absolute;
+				  top: 20px;
+				  left: 40px;
+                  width: 95%; 
+                  min-height: 800px;
+                  margin: 0 auto; 
+                  padding: 10px; }
+
+#headerImg		{ background-color: #908886; 
+                  height: 70px; 
+                  padding: 10px;}
+                  
+#headerLink		{ margin-top: 20px; 
+                  margin-left: 55%; 
+                  font-size: 13pt; }
+
+#goldline		{ position: relative; 
+                  top: 15px; 
+                  height: 3px;
+                  background-color: gold; }
+
+#sideinfo		{ position: relative; 
+                  top: 25px; 
+                  background-color: #E6E6E6;  
+                  width: 20%; 
+                  min-height: 600px; 
+                  float: left; }
+                  
+#content		{ position: relative; 
+                  top: 25px; 
+                  background-color: #F5F5F5; 
+                  width: 80%; 
+                  min-height: 600px; 
+                  float: left; }  
+
+#footer			{ position: relative; 
+                  top: 35px;
+                  background-color: #999999; 
+                  height: 70px; 
+                  margin-top: 10px; 
+                  margin-bottom: 35px;
+                  clear:both; }
+
+
+
+
+/*표준 글꼴 서식 스타일*/
+ body, td, th, input, select, textarea, p {
+	font-size: 12pt;
+	font-family: 'NanumGothic', 'MalgunGothic' ; 
+	color: navy;
+	padding: 4px; /* 안쪽 여백 */
+}
+
+/* 표준 링크 스타일 */
+a {text-decoration: none;}
+
+/* 
+   a:link { text-decoration:none; }
+
+   a:visited { text-decoration:none; } 
+*/
+
+/* unvisited link */
+a:link {
+	color: #005c99;	
+}
+
+/* visited link */
+a:visited{
+	color: #005c99;
+}
+
+/* mouse over link */
+a:hover { color:maroon; 
+          font-weight: bold; }
+          
+/* selected link */
+a:active {
+	color: navy;
+}          
+          
+		  
+#headerLink a:hover { text-decoration: none;
+	                  color: maroon;
+		  			  font-weight: bold;
+		  			  font-size:12pt;
+		  			  cursor: pointer;  }	   
+
+.box { border:1px solid navy; }
+
+.box2 { border:1px dotted red; }
+
+table.outline { width: 95%;
+	            border-top: 4px double navy;
+	            border-bottom: 4px double navy; }
+	             
+table.outline th {background-color: #e6e6e6;}	             
+
+.error { color: red; padding-left: 10px; margin-bottom: 5px;}
+
+img { border: 0px; }
+
+.bgcol {background-color: LightGray;}
+
+.select_wrap { overflow: hidden; padding: 15px 4.7%; }
+.select_wrap > div { float: left; width: 50%; }
+.select_wrap > div .selector { min-width: 100%; }
+.select_wrap > div .selector span { min-width: 100%; }
+.select_wrap > div:nth-child(even) { padding-left: 2.5px; }
+.select_wrap > div:nth-child(odd) { padding-right: 2.5px; }
+
+.store_list { border-top: 1px solid #111; }
+.store_list ul { margin-bottom: 50px; }
+.store_list ul li { padding: 12px 0; border-bottom: 1px solid #e5e5e5; }
+.store_list ul li a { position: relative; display: block; padding-right: 45px; }
+.store_list ul li a span { display: block; font-size: 10px; color: #666; line-height: 15px; }
+.store_list ul li a span.store { margin-bottom: 5px; font-size: 12px; font-weight: bold; color: #111; }
+.store_list ul li a .service { overflow: hidden; margin-top: 5px; }
+.store_list ul li a .service span { float: left; }
+.store_list ul li a .service span + span { float: right; }
+.store_list ul li a:after { content: ''; display: block; position: absolute; top: 50%; right: 10px; width: 13px; height: 19px; margin-top: -10px; background: url("/semiProject/img/spr_common.png") -50px -25px no-repeat; background-size: 250px auto; vertical-align: top; }
+
+.layer_store { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: #fff; z-index: 100; }
+.layer_store .store_tit { min-height: 70px; padding: 16px 4.7%; }
+.layer_store .store_tit span { display: block; font-size: 10px; color: #666; line-height: 15px; }
+.layer_store .store_tit span:first-child { margin-bottom: 5px; font-size: 12px; font-weight: bold; color: #111; }
+.layer_store .map_wrap { height: 100%; background: #eee; }
+.layer_store .btn_close { position: absolute; top: 8px; right: 5px; width: 33px; height: 33px; font-size: 0; }
+.layer_store .btn_close:before { content: ''; display: block; background: url("/semiProject/img/spr_common.png") -75px -25px no-repeat; background-size: 250px auto; width: 13px; height: 13px; margin: 10px 0 0 10px; }
+
+.sub_news,.sub_news th,.sub_news td{border:0}
+.sub_news a{color:#383838;text-decoration:none}
+.sub_news{width:100%;border-bottom:1px solid #999;color:#666;font-size:12px;table-layout:fixed}
+.sub_news caption{display:none}
+.sub_news th{padding:5px 0 6px;border-top:solid 1px #999;border-bottom:solid 1px #b2b2b2;background-color:#f1f1f4;color:#333;font-weight:bold;line-height:20px;vertical-align:top}
+.sub_news td{padding:8px 0 9px;border-bottom:solid 1px #d2d2d2;text-align:center;line-height:18px;}
+.sub_news .date,.sub_news .hit{padding:0;font-family:Tahoma;font-size:11px;line-height:normal}
+.sub_news .title{text-align:left; padding-left:15px; font-size:13px;}
+.sub_news .title .pic,.sub_news .title .new{margin:0 0 2px;vertical-align:middle}
+.sub_news .title a.comment{padding:0;background:none;color:#f00;font-size:12px;font-weight:bold}
+.sub_news tr.reply .title a{padding-left:16px;background:url(첨부파일/ic_reply.png) 0 1px no-repeat}
