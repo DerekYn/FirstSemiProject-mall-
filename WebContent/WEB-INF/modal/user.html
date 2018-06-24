@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+
+			<!-- 
+ 		 			=== jQuery Mobile Popups ===
+   
+				        팝업을 이용해서 작은 이미지(썸네일)를 큰 이미지로로 보여주는 용도로 사용할 수 있습니다.
+				
+				    data-overlay-theme="a" 는 light overlay 이고,
+				    data-overlay-theme="b" 는 dark overlay 입니다.
+				
+				    **참고**: 물리적으로 같은 이미지에 대해서 작은 사이즈와 큰 사이즈를 별도 준비하면 좋습니다.
+ 				-->
+
+
+	<!-- Include meta tag to ensure proper rendering and touch zooming -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Include jQuery Mobile stylesheets -->
+	<link rel="stylesheet" href="css/themes/default/jquery.mobile-1.4.5.min.css">
+
+	<!-- Include the jQuery library -->
+	<script src="/semiProject/js/jquery.js"></script>
+
+	<!-- Include the jQuery Mobile library -->
+	<script src="/semiProject/js/jquery-3.3.1.min.js"></script>
+
+</head>
+<body>
+
+<div data-role = "page">
+	<div data-role ="header">
+		<h1>jQuery Mobile Popups</h1>
+	</div>
+	
+	<div data-role = "main" class = "ui-content ">
+		<div>
+				<p>이미지를 클릭하면 크게 보입니다.</p>
+				<p>오른쪽 상단에 돌아가기 버튼을 추가했음을 공지합니다</p>
+				<p>data-overlay-theme 에 따라 밝기가 달라집니다</p>
+				<a href="#myPopup1" data-rel="popup" data-position-to="window"><img src="images/Tulips_small.jpg"/></a>
+				<a href="#myPopup2" data-rel="popup" data-position-to="window"><img src="images/Chrysanthemum_small.jpg"/></a>
+				<a href="#myPopup3" data-rel="popup" data-position-to="window"><img src="images/Hydrangeas_small.jpg"/></a>
+		
+		
+		
+		</div>
+		
+			<div data-role="popup" id="myPopup1" data-dismissible= "false" data-overlay-theme="a">
+			
+				<p>Tulips</p>
+				<a href="#" data-rel="back" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all ui-shadow ui-btn-right">Close</a>
+				<img src="images/Tulips_large.jpg"/>
+					</div>	
+			
+			
+			
+		<div data-role="popup" id="myPopup2" data-dismissible= "false" data-overlay-theme="b">
+			
+				<p>Chrysanthemum</p>
+				<a href="#" data-rel="back" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all ui-shadow ui-btn-right">Close</a>
+				<img src="images/Tulips_large.jpg"/>
+					</div>	
+					
+					
+		<div data-role="popup" id="myPopup3" data-dismissible= "false" data-overlay-theme="b">
+			
+				<p>Hydrangeas</p>
+				<a href="#" data-rel="back" class="ui-btn ui-icon-delete ui-btn-icon-notext ui-corner-all ui-shadow ui-btn-right">Close</a>
+				<img src="images/Hydrangeas_large.jpg"/>
+					</div>	
+			</div>
+			
+
+	<div data-role="footer">
+		<h1>Paging Total</h1>
+	</div>
+ </div>
+</body>
+</html>
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
